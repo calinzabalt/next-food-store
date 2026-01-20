@@ -1,18 +1,6 @@
 import * as React from 'react';
-import { Slot } from '@radix-ui/react-slot';
-import { type VariantProps, cva } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 import { Loader2 } from 'lucide-react';
-
-// NOTE: We need class-variance-authority installed.
-// I'll install it if missing, but it was in the boilerplate in previous check.
-// Wait, create-next-app with typescript usually doesn't include cva by default unless shadcn is used.
-// I better install `class-variance-authority` and `@radix-ui/react-slot` if I want to use this pattern.
-// Checking package.json... I only installed lucide-react clsx tailwind-merge.
-// I need: class-variance-authority, @radix-ui/react-slot.
-
-// For now, I will write a simpler Button without cva/radix to avoid extra installs and keep it lightweight unless I add them.
-// "Vanilla" Tailwind Button.
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger';

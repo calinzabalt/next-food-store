@@ -47,6 +47,24 @@ export const products: Product[] = [
         calories: 600,
         isSpicy: true,
     },
+    {
+        id: 'b3',
+        name: 'Mushroom Swiss Burger',
+        description: 'Beef patty, sautéed mushrooms, Swiss cheese, and caramelized onions.',
+        price: 13.50,
+        categoryId: 'burgers',
+        image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&q=80&w=800',
+        calories: 720,
+    },
+    {
+        id: 'b4',
+        name: 'BBQ Bacon Burger',
+        description: 'Beef patty, crispy bacon, onion rings, cheddar cheese, and BBQ sauce.',
+        price: 14.50,
+        categoryId: 'burgers',
+        image: 'https://images.unsplash.com/photo-1596662951482-0c4ba74a6df6?auto=format&fit=crop&q=80&w=800',
+        calories: 850,
+    },
 
     // Pizza
     {
@@ -79,6 +97,26 @@ export const products: Product[] = [
         categoryId: 'pizza',
         image: 'https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&q=80&w=800',
         calories: 950,
+    },
+    {
+        id: 'p3',
+        name: 'Four Cheese',
+        description: 'Mozzarella, gorgonzola, parmesan, and provolone.',
+        price: 15.50,
+        categoryId: 'pizza',
+        image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&q=80&w=800',
+        calories: 880,
+        isVegetarian: true,
+    },
+    {
+        id: 'p4',
+        name: 'Veggie Supreme',
+        description: 'Bell peppers, onions, mushrooms, olives, and fresh tomatoes.',
+        price: 14.99,
+        categoryId: 'pizza',
+        image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&q=80&w=800',
+        calories: 780,
+        isVegetarian: true,
     },
 
     // Sushi

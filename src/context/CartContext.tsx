@@ -96,7 +96,6 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     };
 
     const checkout = () => {
-        alert('Processing checkout...');
         clearCart();
         setIsCartOpen(false);
     };

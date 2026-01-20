@@ -2,7 +2,6 @@
 
 import { Category } from '@/lib/types';
 import { cn } from '@/lib/utils';
-import { useEffect, useState } from 'react';
 
 interface CategoryTabsProps {
     categories: Category[];
@@ -11,7 +10,6 @@ interface CategoryTabsProps {
 }
 
 export function CategoryTabs({ categories, activeId, onSelect }: CategoryTabsProps) {
-    // We can add intersection observer logic here later to auto-update active tab on scroll
     return (
         <div className="sticky top-16 z-40 bg-white/80 backdrop-blur-md border-b border-gray-100 py-4 shadow-sm">
             <div className="container mx-auto px-4 overflow-x-auto scrollbar-hide">

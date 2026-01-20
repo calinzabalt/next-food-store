@@ -1,7 +1,7 @@
 import { Header } from '@/components/layout/Header';
 import { StickyCart } from '@/components/layout/StickyCart';
 import { products } from '@/lib/data';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/Badge';
 import { ArrowLeft, Clock, Flame, Utensils } from 'lucide-react';
 import Image from 'next/image';

@@ -4,7 +4,7 @@ import { HeroSection } from "@/components/home/HeroSection";
 import { NewsletterSection } from "@/components/home/NewsletterSection";
 import { products } from "@/lib/data";
 import { DishCard } from "@/components/food/DishCard";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, Star } from "lucide-react";
 
@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Featured Section */}
       <section className="py-20 container mx-auto px-4">
-        <div className="flex justify-between items-end mb-10">
+        <div className="flex justify-between items-end mb-10 animate-fade-in-up">
           <div>
             <h2 className="text-3xl font-bold text-gray-900">Popular Dishes</h2>
             <p className="text-gray-500 mt-2">Everyone's favorites. Tried, tested, and loved.</p>
@@ -28,7 +28,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-up delay-200">
           {featuredProducts.map(product => (
             <DishCard key={product.id} product={product} />
           ))}
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-6">
-            <span className="text-orange-600 font-bold bg-orange-50 px-3 py-1 rounded-full text-sm">Our Services</span>
+            <span className="text-orange-600 font-bold bg-orange-50 px-3 py-1 rounded-full text-sm inline-block mb-4">Our Services</span>
             <h2 className="text-4xl font-bold text-gray-900">We Bring the Feast to You</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Planning a party, corporate event, or wedding? Let us handle the food.
@@ -78,6 +78,8 @@ export default function Home() {
       </section>
 
       <NewsletterSection />
+
+
 
       <StickyCart />
     </main>

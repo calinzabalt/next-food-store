@@ -1,7 +1,7 @@
 'use client';
 
 import { Product, Modifier, ModifierOption } from '@/lib/types';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { X, Minus, Plus } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';

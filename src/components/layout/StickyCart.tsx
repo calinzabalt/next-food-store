@@ -1,10 +1,12 @@
 'use client';
 
 import { useCart } from '@/context/CartContext';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { X, Plus, Minus, Trash2, ShoppingBag } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
+
+import Link from 'next/link';
 
 export function StickyCart() {
     const { isCartOpen, closeCart, items, cartTotal, updateQuantity, removeFromCart, checkout } = useCart();
@@ -89,9 +91,11 @@ export function StickyCart() {
                             <span className="text-gray-600">Subtotal</span>
                             <span className="text-2xl font-bold">${cartTotal.toFixed(2)}</span>
                         </div>
-                        <Button className="w-full h-14 text-lg" onClick={() => alert('Checkout Logic would go here!')}>
-                            Checkout
-                        </Button>
+                        <Link href="/checkout" onClick={closeCart}>
+                            <Button className="w-full h-14 text-lg">
+                                Checkout
+                            </Button>
+                        </Link>
                     </div>
                 )}
             </div>
